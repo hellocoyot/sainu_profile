@@ -78,6 +78,14 @@ section{padding:clamp(64px,9vw,120px) 0}
 .f3{left:-18px;bottom:12%;background:var(--blue);color:#fff}
 .dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#20c46b;margin-right:6px}
 
+.cred{background:#fff;border-bottom:1px solid #e6e9f5}
+.credgrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0}
+.credgrid>div{padding:22px 24px;border-left:1px solid #e6e9f5}
+.credgrid>div:first-child{border-left:0;padding-left:0}
+.credgrid small{display:block;font:600 11px Inter,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--blue);margin-bottom:6px}
+.credgrid b{display:block;font:700 16px Sora,sans-serif;color:var(--text)}
+.credgrid span{font-size:13.5px;color:#5b6483}
+@media(max-width:860px){.credgrid{grid-template-columns:1fr 1fr}.credgrid>div{padding:16px;border-left:0;border-top:1px solid #e6e9f5}.credgrid>div:nth-child(-n+2){border-top:0}}
 /* marquee */
 .marq{background:var(--ink2);color:#cfd6f5;padding:22px 0;overflow:hidden;border-top:1px solid #ffffff12}
 .marq .track{display:flex;gap:56px;width:max-content;animation:scroll 38s linear infinite}
@@ -283,11 +291,17 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:10px 28px;justify-content:space-bet
   </div>
   <div class="portrait">
     <div class="frame"><img src="headshot.jpg" alt="Portrait of JC Sainudheen Kaderi" width="1000" height="1333"></div>
-    <div class="float f1"><b>Optum · USA</b>AI product development</div>
-    <div class="float f2"><b>Yokogawa · Japan</b>IT &amp; AI products</div>
-    <div class="float f3"><b>MSc, Coventry Univ. UK</b>MBA, Business Management</div>
   </div>
 </div></section>
+
+<div class="cred" aria-label="Career and education">
+  <div class="wrap credgrid">
+    <div><small>Experience</small><b>Optum · USA</b><span>Lead, AI product development</span></div>
+    <div><small>Experience</small><b>Yokogawa · Japan</b><span>Lead UX, IT &amp; AI products</span></div>
+    <div><small>Education</small><b>MSc, Product Design</b><span>Coventry University, UK</span></div>
+    <div><small>Education</small><b>MBA, Business Management</b><span>Indian School of Business Management</span></div>
+  </div>
+</div>
 
 <div class="marq" aria-label="Programmes inaugurated by and partners">
   <div class="track">
