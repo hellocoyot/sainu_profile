@@ -1851,7 +1851,7 @@
     }
 
     /* Responsive Queries */
-    @media(max-width: 1060px) {
+    
       .pgrid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
@@ -1872,9 +1872,9 @@
       .t-q {
         grid-column: span 2;
       }
-    }
+    
 
-    @media(max-width: 900px) {
+    
       .nav .links {
         display: none;
       }
@@ -2367,9 +2367,9 @@
         padding: 24px 0;
         font-size: 13px;
       }
-    }
+    
 
-    @media(max-width: 640px) {
+    
       .wrap {
         padding: 0 16px;
       }
@@ -2445,7 +2445,7 @@
       section {
         padding: 38px 0;
       }
-    }
+    
 
     /* ========================================================
        Framer Smooth Motion & Stagger Reveal System
@@ -2559,11 +2559,10 @@
       }
     }
   </style>
-
-  <style id="mobile-url">
+<style id="mobile-url">
   /* Mobile-first edition: phone layout at every width */
   html{-webkit-text-size-adjust:100%}
-  body{max-width:520px;margin:0 auto;box-shadow:0 0 0 1px #0001}
+  body{max-width:520px;margin:0 auto;box-shadow:0 0 0 1px #0001;overflow-x:hidden}
   .nav{max-width:520px;left:50%;right:auto;transform:translateX(-50%);width:100%}
   .nav .links,.nav #navInviteBtn{display:none!important}
   .menu-btn{display:flex!important}
